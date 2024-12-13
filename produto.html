@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Site Crud</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="produto.html">Produtos</a>
+            <a href="tabela.html">Clientes</a>
+        </ul>
+    </nav>
+    </header>
+    <form id="form-produto">
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Entrada</th>
+            </tr>
+            <tr>
+                <td><label for="Comprador">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome" required></td>
+            </tr>
+            <tr></tr>
+                <td><label for="forme">fornecedor:</label></td>
+                <td><input type="text" id="forme" name="forme" required></td>
+            </tr>
+            <tr class="clay">
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            
+            <tr></tr>
+                <td><label for="produto">Produtos:</label></td>
+                <td><textarea id="produto" name="produto" rows="4" cols="30" placeholder="Digite os produtos separados por vírgula" required></textarea></td>
+            </tr>
+            <tr >
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script src='cadastrar.js'></script>
+</body>
+
+</html>
